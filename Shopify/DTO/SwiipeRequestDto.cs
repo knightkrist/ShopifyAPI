@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Shopify.DTO
 {
-    public class SwiipeRequestDto
+    public class RequestDto
     {
     }
 }
