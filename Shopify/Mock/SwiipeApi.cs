@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Shopify.Mock
 {
-    public static class SwiipeApi
+    public static class Api
     {
-        public static SwiipeResponseDto Call(SwiipeRequestDto dto)
+        public static ResponseDto Call(RequestDto dto)
         {
             var guid = Guid.NewGuid();
-            return new SwiipeResponseDto()
+            return new ResponseDto()
             {
                 order_id = guid.ToString(),
                 succeded = true,
