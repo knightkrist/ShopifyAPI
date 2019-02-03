@@ -65,9 +65,9 @@ namespace Shopify.Controllers
 
             if(shopifyResponse.Result.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                var swiipeRequest = new SwiipeRequestDto();
-                var swiipeResponse = Mock.SwiipeApi.Call(swiipeRequest);
-                return Ok(swiipeResponse);
+                var swiipeRequest = new RequestDto();
+                var swiipeResponse = Mock.Api.Call(swiipeRequest);
+                return Ok(APIResponse);
             } else
             {
                 return BadRequest(shopifyResponse.Result.ReasonPhrase);
