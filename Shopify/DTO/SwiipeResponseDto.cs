@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Shopify.DTO
 {
-    public class SwiipeResponseDto
+    public class ResponseDto
     {
         public bool verified_card { get; set; }
         public bool succeded { get; set; }
